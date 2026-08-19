@@ -1,0 +1,15 @@
+[build]
+  publish = "."
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+# The Map tab embeds map.html in a same-origin iframe, so allow framing for it.
+[[headers]]
+  for = "/map.html"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"

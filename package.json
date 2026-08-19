@@ -1,0 +1,10 @@
+{
+  "name": "morthal-guard-command",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Morthal Guard Command System — shared, multi-user roster and watch management.",
+  "dependencies": {
+    "@netlify/database": "^1.0.0"
+  }
+}
